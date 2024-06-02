@@ -1,0 +1,22 @@
+.category {
+  display: flex;
+  background-color: #fff;
+  padding: 10px 0px;
+  border: none;
+}
+.category .category-image {
+  max-height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.category .category-content {
+  margin-left: 20px;
+  font-size: 1.2em;
+}
+.category .category-content .category-title {
+  font-size: 1em;
+  margin: 0;
+}
+.category .category-content .category-description {
+  color: grey;
+}/*# sourceMappingURL=Category.css.map */

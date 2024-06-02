@@ -1,0 +1,76 @@
+.main-container {
+  padding: 20px 40px 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .book-list {
+    padding: 20px;
+  }
+
+  @media (max-width: 1200px) {
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
+}
+
+@mixin Arrow-Styling {
+  background-color: rgb(253, 250, 250);
+  border: 1px solid grey;
+  color: grey;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  z-index: 1; 
+}
+
+.prevArrow {
+  @include Arrow-Styling;
+  left: -10px;
+
+  @media (max-width: 768px) {
+    left: -5px;
+    font-size: 1.2em;
+    width: 30px;
+    height: 30px;
+  }
+
+  @media (max-width: 480px) {
+    left: -3px;
+    font-size: 1em;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.nextArrow {
+  @include Arrow-Styling;
+  right: -10px;
+
+  @media (max-width: 768px) {
+    right: -5px;
+    font-size: 1.2em;
+    width: 30px;
+    height: 30px;
+  }
+
+  @media (max-width: 480px) {
+    right: -3px;
+    font-size: 1em;
+    width: 20px;
+    height: 20px;
+  }
+}

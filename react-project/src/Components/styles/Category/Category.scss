@@ -1,0 +1,22 @@
+.category {
+    display: flex;
+    background-color: #fff;
+    padding: 10px 0px;
+    border: none;
+    .category-image {
+      max-height: 60px;
+      object-fit: cover;
+    }
+    .category-content {
+      margin-left: 20px;
+      font-size: 1.2em;
+      .category-title {
+        font-size: 1em;
+        margin: 0;
+      }
+      .category-description {
+        color: grey;
+      }
+    }
+  }
+  

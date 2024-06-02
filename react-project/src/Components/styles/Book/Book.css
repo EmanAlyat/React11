@@ -1,0 +1,27 @@
+.book-card .book-image {
+  width: 70%;
+  margin: 0 auto 10px;
+}
+.book-card .book-details {
+  text-align: center;
+  font-size: 1.3em;
+}
+@media (max-width: 768px) {
+  .book-card .book-details {
+    font-size: 1em;
+  }
+}
+@media (max-width: 480px) {
+  .book-card .book-details {
+    font-size: 0.7em;
+  }
+}
+.book-card .book-title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+.book-card .book-author,
+.book-card .book-reviewedBy {
+  font-size: 0.9em;
+  color: #555;
+}/*# sourceMappingURL=Book.css.map */
